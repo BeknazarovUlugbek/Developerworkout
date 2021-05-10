@@ -1,0 +1,368 @@
+/* Created by Beknazarov */
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Lobster&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#hero{
+    position:relative;
+    background-color: #f179f0;
+}
+html{
+    font-family:sans-serif;
+    color:#D1D7E0;
+    scroll-behavior:smooth;
+}
+.heroo{
+    max-width:360px;
+    height:450px;
+    padding:80px 20px;
+    background-color:#2D283E;
+    border:20px solid;
+    border-image:
+    linear-gradient(100deg, #2D283E 40%, #564F6F);
+    color:#D1D7E0;
+    border-image-slice:1;
+    border-radius:120px;
+    transition:transform 1s ease-in;
+    overflow:hidden;
+    font-style:italic;
+    font-weight:bold;
+    font-size:30px;
+    font-family: 'Lobster', cursive;
+}
+.dwn {
+    font-size:50px;
+    color:#D1D7E0;
+}
+.heroo:hover{
+    transform:scale(.96);
+}
+p{
+    text-indent:20px;
+}
+#hero h1{
+    position:relative;
+    animation: kat 1s ease forwards;
+    color:transparent;
+    width:fit-content;
+}
+@keyframes kat{
+    100%{color:#D1D7E0;}
+}
+#hero h1:nth-child(1){
+    animation-delay:1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay:2.5s;
+}
+#hero h1:nth-child(3){
+    animation-delay:3.5s;
+    animation-name:tania;
+}
+@keyframes tania{
+    100%{color:#802BB1;}
+}
+#hero h1 span{
+    height:100%;
+    width:0%;
+    left:0;
+    top:0;
+    position:absolute;
+    background-color:#802BBA;
+    animation:rims 1s ease forwards;
+    border-radius:50px;
+}
+@keyframes rims{
+    50%{width:100%;
+        left:0px;}
+    100%{width:0%;
+        left:100%;}
+}
+#hero h1:nth-child(1) span{
+    animation-delay:1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay:2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay:3s;
+}
+#list{
+    background-color:#2D283E;
+    font-family:sans-serif;
+    font-style:oblique;
+    font-size:18px;
+}
+.magic{
+    font-size:30px;
+    color:white;
+    margin-left:100px;
+}
+.paragraph{
+    width:360px;
+    height:580px;
+    background-color:#2D283E;
+    border:40px solid #802BB1;
+    padding:0px 20px;
+    line-height:1.8rem;
+    border-image:linear-gradient(100deg, #802BB1 40%, #564F6F);
+    border-image-slice: ;
+}
+li a{
+    color:#D1D7E0;
+    text-shadow:10px 10px 10px black;
+    font-size:20px;
+    transition:color 1s ease-in;
+}
+ul{
+    list-style:square ;
+}
+li a:hover{
+    color:#802BB1;
+    text-shadow:none;
+    text-decoration:none;
+}
+p:nth-child(2){
+    color:#802BB1;
+    font-size:1.5rem;
+    font-variant:small-caps ;
+    text-shadow:2px 2px 2px white;
+    white-space:nowrap ;
+}
+p:first-letter{
+    color:#802BB1;
+    font-size:1.5rem;
+}
+#coding{
+    width:100%;
+    height:550px;
+    border-bottom:40px solid #2D283E;
+    position:relative;
+    color:#D1D7E0;
+    background:url('https://i.ibb.co/5nFZx4Q/Codde-HTML-php-web-programming-source-code-Abstract-code-background-3d-rendering.jpg')
+    no-repeat center center/cover;
+}
+.start {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    padding:40px 20px;
+}
+p:nth-child(2){
+    animation: type 3s steps(50,end) infinite 1s normal both;
+    overflow:hidden;
+    margin-top:10px;
+}
+@keyframes type {
+    0% {width:0px;}
+    100% {width:100%;}
+}
+#learning{
+    width:100%;
+    height:500px;
+    border-bottom:40px solid #2D283E;
+    background:url('https://i.ibb.co/rxj00ZJ/Getty-Images-964395046.jpg') no-repeat center center/cover;
+}
+#coding h5{
+    padding:15px 55px;
+    border:1px solid palegreen;
+    width:250px;
+    margin-left:590px;
+    animation: web 4s ease-in;
+    animation-iteration-count:infinite;
+    border-radius:50%;:;
+    box-shadow:2px 3px 3px 3px white;
+    font-size:25px;
+    text-align:center;
+    transition:transform 4s ease-in;
+    background-color:transparent;
+    color:#D1D7E0;
+}
+@keyframes web{
+    from{ transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.progress {
+    display:flex;
+    justify-content:space-between;
+}
+progress{
+    font-size:22px;
+    background:#D1D7E0;
+    color:#802BB1;}
+progress::-webkit-progress-bar {
+    background: #D1D7E0;
+}
+progress::-webkit-progress-value {
+    background: #802BB1;
+}
+progress::-moz-progress-bar {
+    color: #802BB1;
+    background: #D1D7E0}
+aside, q{
+    font-family:sans-serif;
+    font-size:25px;
+    color:gold;
+}
+footer h3{
+    padding:20px 20px;
+    background:linear-gradient(pink,gray);
+    color:forestgreen;
+    font-family:sans-serif;
+    text-transform:uppercase ;
+    text-shadow:2px 2px 2px black;
+}
+.bar {
+    line-height:2.5rem;
+}
+.line{
+    height:5px;
+    max-width:800px;
+    position:relative;
+    color:#D1D7E0;
+    border-radius:5px;
+    text-align:right;
+}
+.line::before{
+    content:'';
+    left:0;
+    top:0;
+    width:100%;
+    position:absolute;
+    height:5px;
+    background-color:#ddd;
+    z-index:1;
+    border-radius:10px;
+}
+.line::after{
+    content:'';
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background-color:#802BB1;
+    position:absolute;
+    z-index:2;
+    animation:progress 4s ease forwards;
+    animation-iteration-count:infinite;
+    border-radius:5px;
+    animation-delay:2s;
+}
+.line1:after{
+    max-width:95%;
+}
+.line2:after{
+    max-width:90%;
+}
+.line3:after{
+    max-width:10%;
+}
+.line4:after{
+    max-width:5%;
+}
+@keyframes progress {
+    from{width:0%;}
+    to{ width:100%;}
+}
+.content p {
+    font-family:'Lobster', cursive;
+    font-size:18px;
+}
+.learn{
+    border:4px solid #802BB1 ;
+    width:208px;
+    text-align:center;
+    border-style:dashed ;
+    padding:5px 5px;
+    align-items:center;
+    margin-left:100px;
+    font-size:20px;
+}
+#pet{
+    max-width:360px;
+    max-height:550px;
+    background-color:#2D283E;
+    background:url('https://i.ibb.co/XFPfT7K/kitten-440379.jpg') no-repeat center center/cover;
+}
+.pictures{
+    max-width:360px;
+    height:100%;
+    perspective:1000px;
+    transform-style: preserve-3d;
+    animation:rotate 15s linear infinite;
+    padding:100px 100px;
+    perspective-origin: 50% 50%;
+    position:relative;
+}
+.cls{
+    background:rgba(0,0,0,.7);
+    width:100%;
+    height:100%;
+}
+.pictures img {
+    width:100px;
+    height:100px;
+    border:5px solid gray;
+    position:absolute;
+    opacity:.9;
+    box-shadow:5px 5px 5px 2px #888888;
+    border-radius:20px;
+    filter:hue-rotate(120deg);
+}
+.pictures div{
+    width:100px;
+    height:100px;
+    margin-top:-40px;
+    position:absolute;
+}
+.front-side{
+    transform:translateZ(50px);
+    -webkit-transform:translateZ(50px);
+}
+.back-side{
+    transform:rotateY(180deg)
+    translateZ(50px);
+    -webkit-transform:rotateY(180deg)
+    translateZ(50px);
+}
+.left-side{
+    transform:rotateY(-90deg)
+    translateX(-50px);
+    -webkit-transform:rotateY(-90deg)
+    translateX(-50px);
+    transform-origin:left;
+}
+.right-side{
+    transform:rotateY(90deg)
+    translateX(50px);
+    -webkit-transform:rotateY(90deg)
+    translateX(50px);
+    transform-origin:right;
+}
+.top-side{
+    transform:rotateX(-90deg)
+    translateY(-50px);
+    transform-origin:top;
+}
+.bottom-side{
+    transform:rotateX(90deg)
+    translateY(50px);
+    transform-origin:bottom;
+}
+@keyframes rotate{
+    0% {transform:rotateY(0deg)
+    rotateX(0deg);
+    }
+    100% {transform:rotateY(360deg)
+    rotateX(360deg);
+    }
+}
+#pet .cls q{
+    text-align:center;
+    margin-left:40px;
+    text-shadow:3px 3px 3px gray;
+}
+.cat p { padding:15px 15px;}
